@@ -11,7 +11,7 @@ st.sidebar.image("streamlit_pic.png", use_container_width=True)
 st.set_page_config(page_title="Lebanon Commercial,Service & Non-Banking Financial Institutions, by Governorate", layout="wide")
 
 # === PATH TO CSV =============================================================
-CSV_PATH = r"C:\Users\Toters\Desktop\Streamlit\Cleaned Data.csv"
+CSV_PATH = Path(__file__).parent / "Cleaned Data.csv"
 
 # === COLUMN SETS =============================================================
 COMMERCIAL_SIZE_COLS = [
